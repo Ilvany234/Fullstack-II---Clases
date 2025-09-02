@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Llamamos a la misma hoja de estilos para reutilizar codigo-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> <!-- Lamamos a la lbreria de bootstrap-->
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!-- Etiquetas reutilizadas de la primera pagina-->
+    <div class="nombre">
+        <img class="logo" src="assets/img/descarga (2).jpg" alt="logo">
+        <h1 class = 'titulo' style="font-family: Arial; font-size: 20px;">Lo quieres, te lo vendo</h1>
+    </div>
+
+    <nav class = "navbar">
+        <a href=index.html>Inicio</a> | <a href="">Servicios</a> | <a href=contacto.html>Contacto</a>
+    </nav> 
+    <!-- Finalización de código reutilizado-->
+
+    <!-- Apartado para el envio de comentarios al equipo de "Lo quieres, te lo vendo"-->
+    <main class="contacto">
+        <h1>Comunicate con Nuestro Equipo</h1>
+
+        <!-- Codigo extraido desde la pagina de bootstrap, cambiamos el label y el placeholder del input. Ademas, creamos un placeholder en la etiqueta "textarea", añadimos un botón el cual funciona para realizar el envio del comentario-->
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Correo  de contacto</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ejemplo@gmail.com">
+        </div>
+    
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Agrega tu mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Envianos tu mensaje!"></textarea>
+        </div>
+    
+        <div class="boton">
+            <button id="btn_enviar" type="button" class="btn btn-success">Enviar</button>
+        </div>
+    </main>
+
+
+    <footer>
+        <p><strong>Nombre del equipo</strong> - 2025</p>
+    </footer>
+
+    <!--Se realizó el Script del bootstrap de la misma pagina, el cual agrega efectos al botón-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    
+
+    <script 
+        src="assets/js/script.js">
+    </script>
+</body>
+</html>

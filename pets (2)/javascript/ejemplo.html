@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="titulo">Actividad - Operaciones con Dos Numeros</h1>
+    <p>Ingrese dos numeros distintos y mayores a cero, luego presione <b>Calcular</b></p>
+
+    <div class="card">
+        <label>Número A:</label>
+        <input type="number" id="numA" min="1" step="any" />
+        <label>Número B:</label>
+        <input type="number" id="numB" min="1" step="any" />
+        <button onclick="calcular()">Calcular</button>
+        <div id="msg" class="error"></div>
+        <pre id="resultado"></pre>
+    </div>
+
+    <script>
+        function calcular(){
+            const numA = parseFloat(document.getElementById("numA").value); 
+            const numB = parseFloat(document.getElementById("numB").value);
+
+            const msg = document.getElementById("msg");
+            const resultado = document.getElementById("resultado");
+
+            msg.textContent = "";
+            resultado.textContent = "";
+
+            if (isNaN(numA) || isNaN(numB)){
+                msg.textContent = "⚠️ Debe ingresar ambos numeros";
+                return;
+            }
+
+            if (numA === numB){
+                msg.textContent = "⚠️ Los numeros deben ser distintos";
+                return;
+            }
+
+
+            const sum = numA + numB;
+            const res = numA - numB;
+            const mul = numA * numB;
+            const div = numA / numB;
+
+            const salida = `Resultados: \n Suma: ${sum} \n Resta: ${res} \n Multiplicación: ${mul} \n División: ${div}`
+        
+            resultado.textContent = salida;
+            console.log(salida)
+        }
+
+    </script>
+
+    <!--<input type="number" id="miInput1" min="1" placeholder="Escribe aquí tu primer numero">
+    <input type="number" id="miInput2" min="1" placeholder="Escribe aquí tu segundo número">
+-->
+
+</body>
+</html>

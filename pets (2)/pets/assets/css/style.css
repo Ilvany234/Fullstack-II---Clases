@@ -1,0 +1,61 @@
+*{
+    background-color: wheat;
+    color: red;
+}
+
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.historia h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.historia {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.historia h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.historia img {
+    width: 25%;
+}
+
+.historia p {
+    width: 50%;
+}
+
+.ubicacion h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.productos h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.productos img {
+    width: 225px;
+    margin: 5px;
+}
+.boxMapa {
+    display: flex;
+    justify-content: center;
+}
+.boxMapa img {
+    width: 25%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Your Age</title>
+</head>
+<body>
+
+    <h1 class="titulo">Actividad - Obtener el rango etario de una persona</h1>
+    <p class="subtitulo"> <strong style="">Instrucciones: </strong>Ingrese su edad, luego presione <b>Enviar</b></p>
+
+    <div class="card">
+        <label>Ingresa tu edad:</label>
+        <input type="number" id="numA" min="1" step="any" />
+        <button onclick="calcular()">Enviar</button>
+        <div id="msg" class="error"></div>
+    </div>
+
+    <script>
+        function calcular(){
+            const numA = parseFloat(document.getElementById("numA").value); 
+
+            const msg = document.getElementById("msg");
+
+            msg.textContent = "";
+
+
+            // Revisar validacion del numero, evitando recibir decimales
+            if (!isNumber || rawValue.trim() === '') {
+                msg.textContent = " ⚠️ Ingrese un numero entero, no decimal";
+                return;
+            }
+
+            if (numA < 1){
+                msg.textContent = "⚠️ Debe ingresar un numero mayor a 1";
+                return;
+            }
+            
+            if (numA < 18){
+                msg.textContent = "La persona es menor de edad";
+                return;
+            } else if (numA >= 18 && numA <= 65){
+                msg.textContent = "La persona es un adulto"
+            } else if (numA >= 65 && numA <= 85) {
+                msg.textContent = "La persona es un adulto mayor"
+            } else {
+                msg.textContent = "La persona es de años dorados"
+            }
+
+        }
+
+    </script>
+</body>
+</html>

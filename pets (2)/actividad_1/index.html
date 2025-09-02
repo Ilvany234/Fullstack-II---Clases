@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Se llamó al style.css por medio de la etiqueta "link"-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Lo quieres, te lo vendo</title>
+</head>
+<body>
+
+    <!-- Creamos la clase nombre para convertirlo en el contenedor-->
+    <div class="nombre">
+        <!--Al descargar la imagenes la llamamos a traves de la carpeta assets e img-->
+        <img class="logo" src="assets/img/descarga (2).jpg" alt="logo"> <!-- Le pusimos la clase logo para poder ingresarle diferentes parametros-->
+        <h1 class = 'titulo' style="font-family: Arial; font-size: 20px;">Lo quieres, te lo vendo</h1>
+    </div>
+
+    <!--En nuestro navbar hicimos que la etiqueta "a" de contacto fuera al contacto.html-->
+    <nav class = "navbar">
+        <a href="">Inicio</a> | <a href="">Servicios</a> | <a href=contacto.html>Contacto</a>
+    </nav>
+
+    <!--La primera parte del texto lo encerramos dentro de una clase para trabajarlo de manera mas ordenada-->
+    <section class = "quienes">
+        <h2>¿Quiénes somos?</h2>
+
+        <p class = "destacados"> En <Strong>Lo quieres, te lo vendo</Strong>, creemos que si lo quieres, ¡debe estar al alcance de tu mano! Somos una tienda online que lo tiene todo: desde lo que necesitas, hasta lo que ni sabías que querías. Tecnología, hogar, moda, accesorios, artículos para tu mascota, regalos originales y mucho más… Si lo estás buscando, aquí lo encuentras.
+        </p>
+
+    </section>
+
+    <!--Segunda parte del texto-->
+    <section class = "nosotros">
+        <h2>Destacados</h2>
+
+        <p class = "destacados">
+            En <strong>Lo quieres, te lo vendo</strong> somos una tienda online donde encuentras de todo: tecnología, hogar, moda, regalos y mucho más. Nos dedicamos a ofrecer variedad, buenos precios y una experiencia de compra rápida y confiable. ¿Lo quieres? Te lo vendemos.
+        </p>
+
+        <!-- Le colocamos box-img para contener todas las imagenes, pero al momento de descargarlas, vimos que no tenian los mismos tamaños, como solución decidimos agregar estilos propios a cada imagen, dejando como referencia la primera imagen sin estilo-->
+        <div class = "box-img">
+            <div>
+                <img src="https://gallery.retailrocket.net/62221f9497a52520c4da705b/img_trekking_impermeable.png" alt="chaleco mujer">
+            </div>
+            <div>
+                <img style = "width: 455px;" src="https://images.falabella.com/v3/assets/blt7c5c2f2f888a7cc3/bltb61ccf2a98df697b/689e47e45480a03af22e4c15/Colormatch-novedades-dk-180825-jr.jpg?auto=webp&disable=upscale&quality=70&width=1280" alt="calzado">
+            </div>
+            <div>
+                <img style = "width: 572px;"src="assets/img/descarga.jpg" alt="herramientas">
+            </div>
+        </div>
+    </section>
+
+    <!--Seguimos los parametros para la realizacion de la actividad-->
+    <footer>
+        <p><strong>Nombre del equipo</strong> - 2025</p>
+
+    </footer>
+</body>
+</html>
